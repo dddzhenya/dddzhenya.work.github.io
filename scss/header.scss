@@ -1,0 +1,437 @@
+$top-color: #002b45;
+$head-color: #fff;
+
+.big-container {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.search {
+  &__link::before {
+    content: "\f002";
+    font-family: "icomoon";
+    color: $head-color;
+    font-size: 17px;
+    padding-right: 10px;
+  }
+
+  &Panel__button-pin::before {
+    content: "\f002";
+    font-family: "icomoon";
+    color: $head-color;
+    font-size: 17px;
+    padding-right: 20px;
+  }
+
+  &Panel__button {
+    margin-right: 60px;
+    border: none;
+    background-color: transparent;
+  }
+}
+.mobile-nav-menu-list__item {
+  color: $top-color;
+  height: 60px;
+  padding-top: 19px;
+  font-size: 18px;
+  display: inline-block;
+}
+.header-nav-menu-mobile.menu--open li {
+  border-bottom: 1.5px solid #e3e5ef;
+  border-top: 1.5px solid #e3e5ef;
+  width: 280px;
+  padding-left: 15px;
+}
+.header-nav-menu-mobile-table.menu--open li {
+  border-bottom: 1.5px solid #e3e5ef;
+  border-top: 1.5px solid #e3e5ef;
+  width: 280px;
+  padding-left: 15px;
+}
+.header-nav-menu-mobile-sofa.menu--open li {
+  border-bottom: 1.5px solid #e3e5ef;
+  border-top: 1.5px solid #e3e5ef;
+  width: 280px;
+  padding-left: 15px;
+}
+
+.menu-mobile__title::after {
+  content: "\f105";
+  font-family: "icomoon";
+  color: $top-color;
+  font-size: 19px;
+  position: absolute;
+  left: 270px;
+}
+.menu-mobile-town__title::after {
+  font-family: "icomoon";
+  color: $top-color;
+  font-size: 17px;
+  position: absolute;
+  left: 270px;
+  content: "\f08a";
+}
+.menu-mobile-town__title::before {
+  font-family: "icomoon";
+  color: $top-color;
+  font-size: 17px;
+  content: "\e948";
+}
+.menu-mobile-catalog__title::after {
+  content: "\f105";
+  font-family: "icomoon";
+  color: $top-color;
+  font-size: 19px;
+  position: absolute;
+  left: 270px;
+}
+.menu-mobile-catalog__title::before {
+  content: "\f0c9";
+  font-family: "icomoon";
+  color: #002b45;
+  font-size: 19px;
+  left: 12px;
+  position: absolute;
+  top: 22px;
+}
+.menu-mobile-catalog-table__title::after {
+  content: "\f105";
+  font-family: "icomoon";
+  color: $top-color;
+  font-size: 19px;
+  position: absolute;
+  left: 270px;
+}
+.menu-mobile-catalog-table__title::before {
+  content: "\f0c9";
+  font-family: "icomoon";
+  color: #002b45;
+  font-size: 19px;
+  left: 12px;
+  position: absolute;
+  top: 22px;
+}
+.menu-mobile-catalog-sofa__title::after {
+  content: "\f105";
+  font-family: "icomoon";
+  color: $top-color;
+  font-size: 19px;
+  position: absolute;
+  left: 270px;
+}
+.menu-mobile-catalog-sofa__title::before {
+  content: "\f0c9";
+  font-family: "icomoon";
+  color: #002b45;
+  font-size: 19px;
+  left: 12px;
+  position: absolute;
+  top: 22px;
+}
+.header {
+  &-nav-menu-mobile.menu--open, &-nav-menu-mobile-table.menu--open, &-nav-menu-mobile-sofa.menu--open {
+    list-style: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: 5;
+    background-color: $head-color;
+    color: #002b45;
+  }
+  &-nav-menu-mobile,&-nav-menu-mobile-table,&-nav-menu-mobile-sofa {
+    display: none;
+  }
+  &-middle__nav {
+    display: none;
+  }
+
+  &-middle {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
+    font-size: 15px;
+  }
+
+  &-middle-rnav {
+    display: flex;
+    width: 114px;
+    margin-right: 60px;
+  }
+
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-nav-menu-list {
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  &-favorite__link {
+    padding: 0 19px;
+  }
+
+  &-nav-menu-list__img {
+    width: 30px;
+    height: 27px;
+  }
+
+  &-nav-menu-list__item {
+    display: flex;
+    font-size: 15px;
+    padding-right: 10px;
+  }
+
+  &-auth__link::before {
+    content: "\e900";
+    font-family: "icomoon";
+    color: $head-color;
+    font-size: 17px;
+  }
+
+  &-favorite__link::before {
+    content: "\f08a";
+    font-family: "icomoon";
+    color: $head-color;
+    font-size: 17px;
+  }
+
+  &-cart__link::before {
+    content: "\f290";
+    font-family: "icomoon";
+    color: $head-color;
+    font-size: 17px;
+  }
+
+  &-city__btn,
+  &-nav__btn {
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.map {
+  &-pin__link {
+    margin-left: 60px;
+    font-size: 20px;
+  }
+
+  &-map-pin__link::before {
+    content: "\e948";
+    font-family: "icomoon";
+    color: $head-color;
+    font-size: 17px;
+  }
+}
+
+.slider {
+  & {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0 auto;
+  }
+
+  &-vase__inner,
+  &-table__inner,
+  &-sofa__inner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    object-fit: cover;
+    width: 100vh;
+    position: relative;
+  }
+
+  &-vase__inner {
+    background-image: url(../images/slider-bg1.jpg);
+  }
+
+  &-table__inner {
+    background-image: url(../images/slider-bg2.jpg);
+  }
+
+  &-sofa__inner {
+    background-image: url(../images/slider-bg3.jpg);
+  }
+}
+.menu-mobile__img::before {
+  content: "\f0c9";
+  font-family: "icomoon";
+  color: $head-color;
+  font-size: 17px;
+}
+.menu-mobile__btn::before {
+  content: "\f0c9";
+  font-family: "icomoon";
+  color: $head-color;
+  font-size: 17px;
+}
+.menu-mobile__btn {
+  display: none;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 25px;
+  z-index: 10;
+}
+.menu-mobile-table__btn::before {
+  content: "\f0c9";
+  font-family: "icomoon";
+  color: $head-color;
+  font-size: 17px;
+}
+.menu-mobile-table__btn {
+  display: none;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 25px;
+  z-index: 10;
+}
+.menu-mobile-sofa__btn::before {
+  content: "\f0c9";
+  font-family: "icomoon";
+  color: $head-color;
+  font-size: 17px;
+}
+.menu-mobile-sofa__btn {
+  display: none;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 25px;
+  z-index: 10;
+}
+.select {
+  &-pin__link {
+    margin-left: 60px;
+    font-size: 18px;
+  }
+
+  &-pin__link:hover {
+    color: #e3ae46;
+  }
+}
+
+.item {
+  &__title {
+    font-family: "William Subhead Pro Reg";
+    font-weight: normal;
+    line-height: 41px;
+    max-width: 1015px;
+    padding-top: 50px;
+    margin-bottom: 33px;
+    color: $head-color;
+    margin-left: 60px;
+    font-size: 40px;
+  }
+
+  &__btn {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 32px;
+    background-color: transparent;
+    position: absolute;
+    transition: all 0.3s;
+    border: 1.5px solid $head-color;
+    width: 168px;
+    height: 50px;
+    margin-left: 60px;
+  }
+
+  &__btn:hover {
+    background-color: #e3ae46;
+    transition: all 0.3s;
+  }
+
+  &__link {
+    color: $head-color;
+  }
+}
+
+.slick {
+  &-dots li button {
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+    border-radius: 7px;
+    border: 1.5px solid $head-color;
+  }
+
+  &-dots li.slick-active button {
+    background-color: $head-color;
+  }
+
+  &-dots li button:before {
+    display: none;
+  }
+
+  &-dots {
+    position: absolute;
+    bottom: 29px;
+    text-align: left;
+    margin-left: 60px;
+    width: 200px;
+  }
+
+  &-dots li {
+    width: 14px;
+    height: 14px;
+    margin: 0px 2px;
+  }
+}
+
+.select-pin__link::after {
+  content: "\f107";
+  font-family: "icomoon";
+  color: $head-color;
+  font-size: 17px;
+}
+
+.product {
+  &-prev.slick-arrow {
+    position: absolute;
+    z-index: 1;
+    bottom: 25px;
+    left: 129px;
+    background-color: transparent;
+    border: transparent;
+  }
+
+  &-next.slick-arrow {
+    background-color: transparent;
+    border: transparent;
+    position: absolute;
+    z-index: 1;
+    bottom: 26px;
+    left: 205px;
+  }
+
+  &-one-tabs {
+    margin-top: 23px;
+  }
+}
+
+.TitleText {
+  font-family: "William Subhead Pro Reg";
+}

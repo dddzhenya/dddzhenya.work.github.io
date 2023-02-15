@@ -2,191 +2,1940 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet" href="fonts/style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="scss/normalize.css" />
-  <link rel="stylesheet" href="scss/slick.css">
-  <link rel="stylesheet" href="scss/jquery.fancybox.css">
-  <link rel="stylesheet" href="scss/style.scss">
-  <link rel="stylesheet" href="scss/style.css">
+  <link rel="stylesheet" href="scss/slick.css" />
+  <link rel="stylesheet" href="scss/slick-theme.css" />
+  <link rel="stylesheet" href="scss/style.scss" />
+  <link rel="stylesheet" href="scss/style.css" />
+  <link rel="stylesheet" href="scss/style.css.map" />
+
 </head>
 
 <body>
-  <div class="menu">
+  <header class="header">
+    <div class="big-container">
+      <div class="slider">
+        <div class="slider-vase__inner">
+          <div class="menu__wrapper">
+            <div class="header-menu__wrapper">
+              <div class="header-base-menu__inner">
+                <div class="header-middle__nav">
+                  <div class="header-middle__search">
+                    <button class="search__button">
+                      <a class="search__link" href="#">
+                      </a>
+                    </button>
+                  </div>
+                  <div class="header-middle__logo">
+                    <a class="logo" href="#">
+                      <img class="logo__img" src="images/logo.svg" alt="logo">
+                    </a>
+                  </div>
+                  <div class="header-middle__btn">
+                    <div class="header-middle-rnav">
+                      <a class="header-auth__link" href="#"></a>
+                      <a class="header-favorite__link" href="#"></a>
+                      <a class="header-cart__link" href="#"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-middle">
+                  <div class="header-city">
+                    <button class="header-city__btn">
+                      <a class="map-pin__link" href="#">
+                        <span id="currentCityTitleText">
+                          Москва</span>
+                      </a>
+                    </button>
+                  </div>
+                  <a class="logo" href="#">
+                    <img class="logo__img" src="images/logo.svg" alt="logo">
+                  </a>
+                  <div class="header-middle-rnav">
+                    <a class="header-auth__link" href="#"></a>
+                    <a class="header-favorite__link" href="#"></a>
+                    <a class="header-cart__link" href="#"></a>
+                  </div>
+                </div>
+                <div class="header-nav">
+                  <button class="header-nav__btn">
+                    <a class="select-pin__link" href="#">
+                      <span class="TitleText">
+                        HOME</span>
+                    </a>
+                  </button>
+                  <div class="menu-list__wrapper">
+                    <ul class="header-nav-menu-list">
+                      <li>
+                        <a class="header-nav-menu-list__item" href="#">
+                          <img class="header-nav-menu-list__img" src="images/menu.svg" alt="menu">
+                          <span>КАТАЛОГ</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-nav-menu-list__item" href="#">Шоурумы</a>
+                      </li>
+                      <li>
+                        <a class="header-nav-menu-list__item" href="#">
+                          <span>ПОКУПАТЕЛЬ</span>
+                          <img class="header-nav-menu-list__img" src="images/angel.svg" alt="menu">
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-nav-menu-list__item" href="#">ДИЗАЙНЕРАМ</a>
+                      </li>
+                      <li>
+                        <a class="header-nav-menu-list__item" href="#">БЛОГ</a>
+                      </li>
+                      <li>
+                        <a class="header-nav-menu-list__item" href="#">
+                          <span>О НАС</span>
+                          <img class="header-nav-menu-list__img" src="images/angel.svg" alt="menu">
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-nav-menu-list__item" href="#">КОНТАКТЫ</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="searchPanel__button">
+                    <a class="searchPanel__button-pin" href="#">
+                      <span class="currentsearchTitleText">
+                        ПОИСК</span>
+                    </a>
+                  </button>
+                </div>
+
+                <button class="menu-mobile__btn">
+                </button>
+
+                <ul class="header-nav-menu-mobile">
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">
+                      <span class="menu-mobile-catalog__title">Каталог</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">Шоурумы</a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">
+                      <span class="menu-mobile__title">Покупатель</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">Дизайнерам</a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">Блог</a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">
+                      <span class="menu-mobile__title">О нас</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">Контакты</a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">
+                      <span class="menu-mobile__title">HOME</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">
+                      <span class="menu-mobile-town__title">Москва</span>
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+            <div class="item-medium">
+              <h1 class="item__title">
+                Подборка новогодних подарков</h1>
+              <button class="item__btn">
+                <a class="item__link" href="#">
+                  подробнее</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="slider-table__inner">
+          <div class="menu__wrapper">
+            <div class="header-menu__wrapper">
+              <div class="header-base-menu__inner">
+                <div class="header-middle__nav">
+                  <div class="header-middle__search">
+                    <button class="search__button">
+                      <a class="search__link" href="#">
+                      </a>
+                    </button>
+                  </div>
+                  <div class="header-middle__logo">
+                    <a class="logo" href="#">
+                      <img class="logo__img" src="images/logo.svg" alt="logo">
+                    </a>
+                  </div>
+                  <div class="header-middle__btn">
+                    <div class="header-middle-rnav">
+                      <a class="header-auth__link" href="#"></a>
+                      <a class="header-favorite__link" href="#"></a>
+                      <a class="header-cart__link" href="#"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-middle">
+                  <div class="header-city">
+                    <button class="header-city__btn">
+                      <a class="map-pin__link" href="#">
+                        <span id="currentCityTitleText">
+                          Москва</span>
+                      </a>
+                    </button>
+                  </div>
+                  <a class="logo" href="#">
+                    <img class="logo__img" src="images/logo.svg" alt="logo">
+                  </a>
+                  <div class="header-middle-rnav">
+                    <a class="header-auth__link" href="#"></a>
+                    <a class="header-favorite__link" href="#"></a>
+                    <a class="header-cart__link" href="#"></a>
+                  </div>
+                </div>
+                <div class="header-nav">
+                  <button class="header-nav__btn">
+                    <a class="select-pin__link" href="#">
+                      <span class="TitleText">
+                        HOME</span>
+                    </a>
+                  </button>
+                  <div class="menu-list__wrapper">
+                    <ul class="header-nav-menu-list">
+                      <li>
+                        <a class="header-nav-menu-list__item" href="#">
+                          <img class="header-nav-menu-list__img" src="images/menu.svg" alt="menu">
+                          <span>КАТАЛОГ</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-nav-menu-list__item" href="#">Шоурумы</a>
+                      </li>
+                      <li>
+                        <a class="header-nav-menu-list__item" href="#">
+                          <span>ПОКУПАТЕЛЬ</span>
+                          <img class="header-nav-menu-list__img" src="images/angel.svg" alt="menu">
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-nav-menu-list__item" href="#">ДИЗАЙНЕРАМ</a>
+                      </li>
+                      <li>
+                        <a class="header-nav-menu-list__item" href="#">БЛОГ</a>
+                      </li>
+                      <li>
+                        <a class="header-nav-menu-list__item" href="#">
+                          <span>О НАС</span>
+                          <img class="header-nav-menu-list__img" src="images/angel.svg" alt="menu">
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-nav-menu-list__item" href="#">КОНТАКТЫ</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="searchPanel__button">
+                    <a class="searchPanel__button-pin" href="#">
+                      <span class="currentsearchTitleText">
+                        ПОИСК</span>
+                    </a>
+                  </button>
+                </div>
+                <button class="menu-mobile-table__btn">
+                </button>
+
+                <ul class="header-nav-menu-mobile-table">
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">
+                      <span class="menu-mobile-catalog-table__title">Каталог</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">Шоурумы</a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">
+                      <span class="menu-mobile__title">Покупатель</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">Дизайнерам</a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">Блог</a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">
+                      <span class="menu-mobile__title">О нас</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">Контакты</a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">
+                      <span class="menu-mobile__title">HOME</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">
+                      <span class="menu-mobile-town__title">Москва</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="item-medium">
+              <h1 class="item__title">
+                Аутентичные столики<br> из
+                металла</h1>
+              <button class="item__btn">
+                <a class="item__link" href="#">
+                  подробнее</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="slider-sofa__inner">
+          <div class="menu__wrapper">
+            <div class="header-menu__wrapper">
+              <div class="header-base-menu__inner">
+                <div class="header-middle__nav">
+                  <div class="header-middle__search">
+                    <button class="search__button">
+                      <a class="search__link" href="#">
+                      </a>
+                    </button>
+                  </div>
+                  <div class="header-middle__logo">
+                    <a class="logo" href="#">
+                      <img class="logo__img" src="images/logo.svg" alt="logo">
+                    </a>
+                  </div>
+                  <div class="header-middle__btn">
+                    <div class="header-middle-rnav">
+                      <a class="header-auth__link" href="#"></a>
+                      <a class="header-favorite__link" href="#"></a>
+                      <a class="header-cart__link" href="#"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-middle">
+                  <div class="header-city">
+                    <button class="header-city__btn">
+                      <a class="map-pin__link" href="#">
+                        <span id="currentCityTitleText">
+                          Москва</span>
+                      </a>
+                    </button>
+                  </div>
+                  <a class="logo" href="#">
+                    <img class="logo__img" src="images/logo.svg" alt="logo">
+                  </a>
+                  <div class="header-middle-rnav">
+                    <a class="header-auth__link" href="#"></a>
+                    <a class="header-favorite__link" href="#"></a>
+                    <a class="header-cart__link" href="#"></a>
+                  </div>
+                </div>
+                <div class="header-nav">
+                  <button class="header-nav__btn">
+                    <a class="select-pin__link" href="#">
+                      <span class="TitleText">
+                        HOME</span>
+                    </a>
+                  </button>
+                  <div class="menu-list__wrapper">
+                    <ul class="header-nav-menu-list">
+                      <li>
+                        <a class="header-nav-menu-list__item" href="#">
+                          <img class="header-nav-menu-list__img" src="images/menu.svg" alt="menu">
+                          <span>КАТАЛОГ</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-nav-menu-list__item" href="#">Шоурумы</a>
+                      </li>
+                      <li>
+                        <a class="header-nav-menu-list__item" href="#">
+                          <span>ПОКУПАТЕЛЬ</span>
+                          <img class="header-nav-menu-list__img" src="images/angel.svg" alt="menu">
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-nav-menu-list__item" href="#">ДИЗАЙНЕРАМ</a>
+                      </li>
+                      <li>
+                        <a class="header-nav-menu-list__item" href="#">БЛОГ</a>
+                      </li>
+                      <li>
+                        <a class="header-nav-menu-list__item" href="#">
+                          <span>О НАС</span>
+                          <img class="header-nav-menu-list__img" src="images/angel.svg" alt="menu">
+                        </a>
+                      </li>
+                      <li>
+                        <a class="header-nav-menu-list__item" href="#">КОНТАКТЫ</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="searchPanel__button">
+                    <a class="searchPanel__button-pin" href="#">
+                      <span class="currentsearchTitleText">
+                        ПОИСК</span>
+                    </a>
+                  </button>
+                </div>
+                <button class="menu-mobile-sofa__btn">
+                </button>
+
+                <ul class="header-nav-menu-mobile-sofa">
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">
+                      <span class="menu-mobile-catalog-sofa__title">Каталог</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">Шоурумы</a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">
+                      <span class="menu-mobile__title">Покупатель</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">Дизайнерам</a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">Блог</a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">
+                      <span class="menu-mobile__title">О нас</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">Контакты</a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">
+                      <span class="menu-mobile__title">HOME</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="mobile-nav-menu-list__item" href="#">
+                      <span class="menu-mobile-town__title">Москва</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="item-medium">
+              <h1 class="item__title">
+                Интервью с Риккардо <br> Джованетти – автором <br>серии Como</h1>
+              <button class="item__btn">
+                <a class="item__link" href="#">
+                  подробнее</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
     <div class="container">
-      <div class="menu__inner">
-        <div class="logo">
-          <img class="logo__img" src="images/logo.png" alt="logo">
+      <div class="product-one__tabs">
+        <div class="tabs">
+          <div class="tab active" data-id="1">
+            <span class="tab-catalog__title">Категории</span>
+          </div>
+          <div class="tab" data-id="2">
+            <span class="tab-room__title">Комнаты</span>
+          </div>
+          <div class="tab" data-id="3">
+            <span class="tab-style__title">Стили</span>
+          </div>
         </div>
-        <div class="menu__description">
-          <div class="menu-top">
-            <div class="menu-top__box">
-              <div class="menu__language">
-                <a class=" menu-content__link--active" href="#">RUS</a>
-                <a class="menu-content__link" href="#">ENG</a>
+        <div class="tab_content">
+          <div class="tab-item active-tab" id="1">
+            <div class="home-page__wrapper">
+              <div class="home-page__item">
+                <a class="home-page__link" href="#">
+                  <img class="home-page__img" src="images/page1.png" alt="page">
+                  <span class="home-page__title">Диваны</span>
+                </a>
               </div>
-              <div class="menu__subtitle">
-                <a href="#">Для перевозчиков</a>
-                <a href="#">Тендеры</a>
-                <a href="#">Борьба с коррупцией</a>
+              <div class="home-page__item">
+                <a class="home-page__link" href="#">
+                  <img class="home-page__img" src="images/page1.png" alt="page">
+                  <span class="home-page__title">Диваны</span>
+                </a>
               </div>
-              <div class="menu-entrance__button">
-                Личный кабинет
+              <div class="home-page__item">
+                <a class="home-page__link" href="#">
+                  <img class="home-page__img" src="images/page1.png" alt="page">
+                  <span class="home-page__title">Диваны</span>
+                </a>
               </div>
-            </div>
-          </div>
-          <div class="menu__bottom">
-            <div class="menu__title"><a class="" href="#">О компаниии</a></div>
-            <div class="menu__title"><a class="" href="#">Транспорт</a></div>
-            <div class="menu__title"><a class="" href="#">Контакты</a></div>
-            <div class="menu__title"><a class="" href="#">Вакансии</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide traffic">
-            <h1 class="swiper__title">
-              Решения <br>для движения
-            </h1>
-            <p class="swiper__text">
-              Мы обеспечиваем бесперебойное движение грузов. Это залог жизнеспособности экономики и благосостояния
-              населения России.
-            </p>
-          </div>
-          <div class="swiper-slide info">
-            <h1 class="swiper__title">
-              Всегда в курсе
-            </h1>
-            <p class="swiper__text">
-              В сердце нашей компании находится передовая информационная система, позволяющая управлять транспортными
-              потоками с филигранной точностью. Каждый наш сотрудник, каждый клиент и весь транспорт являются частью
-              этой системы. Поэтому транспортные решения готовы к использованию еще до обращения клиента.
-            </p>
-          </div>
-          <div class="swiper-slide level">
-            <h1 class="swiper__title">
-              Персональное отношение
-            </h1>
-            <p class="swiper__text">
-              Являясь крупной федеральной компанией, мы стремимся к пониманию, доверию и персональному обслуживанию
-              наших клиентов, число которых составляет несколько тысяч компаний. Каждый клиент работает с личным
-              менеджером, задача которого – предоставить максимально удобное, быстрое и надежное решение.
-            </p>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-      <div class="advantage">
-        <div class="advantage__box">
-          <h3 class="advantage__title">
-            Транспортная логистика
-          </h3>
-          <p class="advantage__text">
-            Разветвленная сеть офисов ИТЕКО, большой собственный автопарк, огромная база надежных подрядчиков – гарантия
-            быстрой доставки и сохранности консолидированных грузов по всей территории Российской Федерации и ЕС.
-          </p>
-        </div>
-        <div class="advantage__box">
-          <h3 class="advantage__title">
-            Агрологистика
-          </h3>
-          <p class="advantage__text">
-            Корпорация ИТЕКО восстановила в России систему агрологистики. Крупнейшие агрохолдинги страны ценят наш опыт
-            и умение четко организовать вывоз урожая с полей и его доставку перерабатывающим заводам.
-          </p>
-        </div>
-      </div>
-      <div class="information">
-        <div class="information__box">
-          <h4 class="information__title">
-            Наша география
-          </h4>
-          <img src="images/banner.jpg" alt="banner">
-          <div class="describe">
-            <div class="describe__box">
-              <div class="number">79</div>
-              <div class="describe__wrapper">
-                <h class="describe-top__title">
-                  офисов по всей
-                </h>
-                <h class="describe-bottom__title">
-                  россии
-                </h>
+              <div class="home-page__item">
+                <a class="home-page__link" href="#">
+                  <img class="home-page__img" src="images/page1.png" alt="page">
+                  <span class="home-page__title">Диваны</span>
+                </a>
+              </div>
+              <div class="home-page__item">
+                <a class="home-page__link" href="#">
+                  <img class="home-page__img" src="images/page1.png" alt="page">
+                  <span class="home-page__title">Диваны</span>
+                </a>
+              </div>
+              <div class="home-page__item">
+                <a class="home-page__link" href="#">
+                  <img class="home-page__img" src="images/page1.png" alt="page">
+                  <span class="home-page__title">Диваны</span>
+                </a>
+              </div>
+              <div class="home-page__item">
+                <a class="home-page__link" href="#">
+                  <img class="home-page__img" src="images/page1.png" alt="page">
+                  <span class="home-page__title">Диваны</span>
+                </a>
+              </div>
+              <div class="home-page__item">
+                <a class="home-page__link" href="#">
+                  <img class="home-page__img" src="images/page1.png" alt="page">
+                  <span class="home-page__title">Диваны</span>
+                </a>
+              </div>
+              <div class="home-page__item">
+                <a class="home-page__link" href="#">
+                  <img class="home-page__img" src="images/page1.png" alt="page">
+                  <span class="home-page__title">Диваны</span>
+                </a>
+              </div>
+              <div class="home-page__item">
+                <a class="home-page__link" href="#">
+                  <img class="home-page__img" src="images/page1.png" alt="page">
+                  <span class="home-page__title">Диваны</span>
+                </a>
+              </div>
+              <div class="home-page__item">
+                <a class="home-page__link" href="#">
+                  <img class="home-page__img" src="images/page1.png" alt="page">
+                  <span class="home-page__title">Диваны</span>
+                </a>
+              </div>
+              <div class="home-page__item">
+                <a class="home-page__link" href="#">
+                  <img class="home-page__img" src="images/page1.png" alt="page">
+                  <span class="home-page__title">Диваны</span>
+                </a>
               </div>
             </div>
           </div>
-        </div>
-        <div class="information__box">
-          <h4 class="information__title">
-            Новости
-          </h4>
-          <div class="data__wrapper">
-            <div class="data">
-              <span class="data-number">22</span>
-              <span class="data-month">июл</span>
-              <span class="data-year">2022</span>
-            </div>
-            <div>
-              <a class="data__link" href="#">ИТЕКО - лауреат национальной премии "Логистика года"</a>
-              <p class="data__text">21 июля в Москве проводилась церемония вручения национальной премии «Логистика
-                года», которую называют старейшей в отрасли: в этом году премия отмечает 20-летие. По решению жюри ООО
-                «ИТЕКО Россия» стало лауреатом в номинации «Лучшая транспортно-экспедиторская компания» в категории
-                «Транспортная и складская логистика». </p>
-            </div>
+          <div class="tab-item" id="2">
           </div>
-          <div class="data__wrapper">
-            <div class="data">
-              <span class="data-number">22</span>
-              <span class="data-month">июл</span>
-              <span class="data-year">2022</span>
-            </div>
-            <div>
-              <a class="data__link" href="#">Компания «ИТЕКО» привезла из Большого театра «Пиковую даму»</a>
-              <p class="data__text">Большой театр (г. Москва) передал Нижегородскому театру оперы и балета им.
-                А.С.Пушкина декорации и костюмы для оперы П.И.Чайковского «Пиковая дама». Компания «ИТЕКО» на 6
-                автопоездах доставила груз в Нижний Новгород. Перевозка выполнялась в полуприцепах, забрендированных
-                компанией в стилистике «В Нижний Новгород - на выходные». Действительно, для жителей регионов России
-                посещение знаменитой оперы - дополнительный повод приехать в Нижний Новгород всей семьёй. </p>
-              <a class="new__link" href="#">Смотреть все новости</a>
-            </div>
+          <div class="tab-item" id="3">
           </div>
         </div>
       </div>
-      <div class="footer">
-        <div class="footer__title">Мы ближе к вам чем вы думаете. </div>
-        <div class="footer__subtitle">Просто позвоните нам по бесплатному телефону</div>
-        <div>
-          <img class="footer-phone__img" src="images/phone.png" alt="phone">
-          <span class="footer-bell">8 800 700 84 48</span>
+    </div>
+  </main>
+
+  <div class="small-menu">
+    <div class="container">
+      <button class="small-menu__btn">В Каталог</button>
+      <div class="small__box">
+        <div class="small-new-menu__item">
+          <img class="small-menu__img" src="images/small-menu-bg-1.png" alt="small-menu" />
+          <h1 class="small-menu__title">Новинки</h1>
+        </div>
+        <div class="small-sale-menu__item">
+          <img class="small-menu__img" src="images/small-menu-bg-2.png" alt="small-menu" />
+          <h1 class="small-menu__title">Sale</h1>
+        </div>
+        <div class="small-availability-menu__item">
+          <img class="small-menu__img" src="images/small-menu-bg-3.png" alt="small-menu" />
+          <h1 class="small-menu__title">В наличии</h1>
         </div>
       </div>
-      <div class="footer-wrapper">
-        <div class="footer-right">
-          <a class="footer-right__link" href="#">Карта сайта</a>
-          <p class="footer-right__text">2017-2022 © Корпорация ИТЕКО.Все права защищены.</p>
+      <div class="stock">
+        <div class="stock__inner">
+          <a class="stock__link" href="#">
+            <img class="stock__img" src="images/stock-inner1.jpg" alt="stock" />
+            <span class="stock-sofa__item">
+              <span class="stock__title"> Снижение цен на кресла </span>
+              <span class="stock__text"> Скидка до 16 % </span>
+            </span>
+          </a>
         </div>
-        <div class="footer-left">
-          <form class="mail" action="">
-            <input class="mail-text" type="email" placeholder="Поиск" required="required" class="input">
-            <img class="footer-search__img" src="images/search.png" alt="search">
-          </form>
-          <img class="footer-end__img" src="images/footer.gif" alt="footer">
+        <div class="stock__inner">
+          <a class="stock__link" href="#">
+            <img class="stock__img" src="images/stock-inner2.jpg" alt="stock" />
+            <span class="stock-credit__item">
+              <span class="stock__title"> Рассрочка без процентов </span>
+              <span class="stock__text"> до 1 млн руб на 12 месяцев </span>
+            </span>
+          </a>
         </div>
       </div>
     </div>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="js/main.js"></script>
+  <div class="tape__wrapper">
+    <div class="container">
+      <div class="tape">
+        <div class="tape__item">
+          <img class="tape__img" src="images/tape-1.svg" alt="tape" />
+          <h4 class="tape-showroom__title">Шоурумы Dantone</h4>
+          <p class="tape__text">7 салонов в 6 городах России</p>
+        </div>
+        <div class="tape__item">
+          <img class="tape__img" src="images/tape-2.svg" alt="tape" />
+          <h4 class="tape-fitting__title">Виртуальная примерка</h4>
+          <p class="tape__text">
+            Посмотрите, как будет
+            выглядеть товар в интерьере
+          </p>
+        </div>
+        <div class="tape__item">
+          <img class="tape__img" src="images/tape-3.svg" alt="tape" />
+          <h4 class="tape-design__title">Дизайн-консультации</h4>
+          <p class="tape__text">
+            Продумаем сценарии вашей
+            новой жизни и подберём
+            мебель и аксессуары
+          </p>
+        </div>
+        <div class="tape__item">
+          <img class="tape__img" src="images/tape-4.svg" alt="tape" />
+          <h4 class="tape-credit__title">Рассрочка</h4>
+          <p class="tape__text">
+            Беспроцентная рассрочка для
+            желанных покупок
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="trend">
+    <div class="container">
+      <div class="trend__box">
+        <div>
+          <div class="trend__inner">
+            <h1 class="trend__title">
+              В тренде
+            </h1>
+            <a href="#">
+              <button class="trend__btn">
+                <span class="trend__subtitle">Все товары</span>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="trend__slider">
+          <div class="trend__item">
+            <button class="trend-item__btn">
+              хит
+            </button>
+            <a href="#">
+              <div class="trend__img"><img class="trend-shelf__images" src="images/trend-1.jpg" alt="trend"></div>
+              <img class="trend-heart__btn" src="images/heart.svg" alt="heart">
+            </a>
+            <div>
+              <ul class="trend__list">
+                <li class="trend-price__text">
+                  169 400 ₽
+                </li>
+                <li>
+                  <a class="trend__link" href="#">
+                    Contempo Стеллаж <br>высокий с 3-я закрытыми<br> секциями
+                  </a>
+                </li>
+                <li class="trend__text">
+                  132*48*200
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="trend__item">
+            <button class="trend-item__btn">
+              хит
+            </button>
+            <a href="#">
+              <div class="trend__img"><img class="trend__images" src="images/trend-2.jpg" alt="trend"></div>
+              <img class="trend-heart__btn" src="images/heart.svg" alt="heart">
+            </a>
+            <div>
+              <ul class="trend__list">
+                <li class="trend-price__text">
+                  97 200 ₽
+                </li>
+                <li>
+                  <a class="trend__link" href="#">
+                    Contempo Прикроватная <br>тумба с 2 ящиками
+                  </a>
+                </li>
+                <li class="trend__text">
+                  56*40*65
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="trend__item">
+            <button class="trend-item__btn">
+              хит
+            </button>
+            <a href="#">
+              <div class="trend__img"><img class="trend__images" src="images/trend-3.jpg" alt="trend"></div>
+              <img class="trend-heart__btn" src="images/heart.svg" alt="heart">
+            </a>
+            <div>
+              <ul class="trend__list">
+                <li class="trend-price__text">
+                  131 900 ₽
+                </li>
+                <li>
+                  <a class="trend__link" href="#">
+                    Кровать Мидлэнд
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="trend__item">
+            <button class="trend-item__btn">
+              хит
+            </button>
+            <a href="#">
+              <div class="trend__img"><img class="trend__images" src="images/trend-4.jpg" alt="trend"></div>
+              <img class="trend-heart__btn" src="images/heart.svg" alt="heart">
+            </a>
+            <div>
+              <ul class="trend__list">
+                <li class="trend-price__text">
+                  58 100 ₽
+                </li>
+                <li>
+                  <a class="trend__link" href="#">
+                    Барный стул Groove венге
+                  </a>
+                </li>
+                <li class="trend__text">
+                  35*35*71
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="trend__item">
+            <button class="trend-item__btn">
+              хит
+            </button>
+            <a href="#">
+              <div class="trend__img"><img class="trend__images" src="images/trend-5.jpg" alt="trend"></div>
+              <img class="trend-heart__btn" src="images/heart.svg" alt="heart">
+            </a>
+            <div>
+              <ul class="trend__list">
+                <li class="trend-price__text">
+                  152 500 ₽
+                </li>
+                <li>
+                  <a class="trend__link" href="#">
+                    ТВ-тумба Bridge с 2-мя<br> ящиками и распашными<br> фасадами
+                  </a>
+                </li>
+                <li class="trend__text">
+                  180*40*62
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="trend__item">
+            <button class="trend-item__btn">
+              хит
+            </button>
+            <a href="#">
+              <div class="trend__img"><img class="trend__images" src="images/trend-6.jpg" alt="trend"></div>
+              <img class="trend-heart__btn" src="images/heart.svg" alt="heart">
+            </a>
+            <div>
+              <ul class="trend__list">
+                <li class="trend-price__text">
+                  31 700 ₽
+                </li>
+                <li>
+                  <a class="trend__link" href="#">
+                    Зеркало Керала круглое<br> золотое
+                  </a>
+                </li>
+                <li class="trend__text">
+                  100*2*100
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="trend__item">
+            <button class="trend-item__btn">
+              хит
+            </button>
+            <a href="#">
+              <div class="trend__img"><img class="trend__images" src="images/trend-2.jpg" alt="trend"></div>
+              <img class="trend-heart__btn" src="images/heart.svg" alt="heart">
+            </a>
+            <div>
+              <ul class="trend__list">
+                <li class="trend-price__text">
+                  97 200 ₽
+                </li>
+                <li>
+                  <a class="trend__link" href="#">
+                    Contempo Прикроватная <br>тумба с 2 ящиками
+                  </a>
+                </li>
+                <li class="trend__text">
+                  56*40*65
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="trend__item">
+            <button class="trend-item__btn">
+              хит
+            </button>
+            <a href="#">
+              <div class="trend__img"><img class="trend__images" src="images/trend-2.jpg" alt="trend"></div>
+              <img class="trend-heart__btn" src="images/heart.svg" alt="heart">
+            </a>
+            <div>
+              <ul class="trend__list">
+                <li class="trend-price__text">
+                  97 200 ₽
+                </li>
+                <li>
+                  <a class="trend__link" href="#">
+                    Contempo Прикроватная <br>тумба с 2 ящиками
+                  </a>
+                </li>
+                <li class="trend__text">
+                  56*40*65
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="design">
+      <div class="container">
+        <div class="design__wrapper">
+          <a class="design__link" href="#">
+            <img class="design__img" src="images/design.jpg" alt="design">
+            <div class="design__box">
+              <div class="design__title">
+                Dantone Buro
+              </div>
+              <div class="design__text">
+                Готовый дизайн-проект под ключ за 3 000 руб/кв.м
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="interior">
+      <div class="container">
+        <div class="interior__box">
+          <div class="interior__inner">
+            <a class="interior__link" href="#">
+              <img class="interior__img" src="images/interior-1.jpg" alt="interior">
+              <span class="interior-sofa__item">
+                <span class="interior__title">
+                  Новый диван Эвери
+                </span>
+                <span class="interior__text">
+                  Будущий бестселлер
+                </span>
+              </span>
+            </a>
+          </div>
+          <div class="interior__inner">
+            <a class="interior__link" href="#">
+              <img class="interior__img" src="images/interior-2.jpg" alt="interior">
+              <span class="interior-library__item">
+                <span class="interior__title">
+                  Модульная библиотека Chess
+                </span>
+                <span class="interior__text">
+                  Дизайн-проект в подарок
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="sample">
+      <div class="container">
+        <div class="sample__slider">
+          <div class="sample__item">
+            <div class="sample__box">
+              <div class="sample__images">
+                <img class="sample__img" src="images/slider.jpg" alt="sample">
+              </div>
+              <div class="sample__info">
+                <div class="sample__inner">
+                  <div class="sample__title">Коллекции</div>
+                  <div class="sample__subtitle">
+                    Lines by David Girelli</div>
+                </div>
+                <div class="sample__text">
+                  Серия получила название Lines, и это не случайно: ее главным декоративным мотивом стали тонкие
+                  параллельные линии. Естественную линейную структуру натурального дуба Джирелли дополнил реечной
+                  отделкой фасадов, создав эстетически последовательные предметы с выраженной харизмой.
+                </div>
+                <button class="sample__btn">
+                  <a class="sample__link" href="#">
+                    Все коллекции
+                  </a>
+                </button>
+                <button class="sample-detail__btn">
+                  <a class="sample__link" href="#">
+                    Подробнее
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sample__item">
+            <div class="sample__box">
+              <div class="sample__images">
+                <img class="sample__img" src="images/slider.jpg" alt="sample">
+              </div>
+              <div class="sample__info">
+                <div class="sample__inner">
+                  <div class="sample__title">Коллекции</div>
+                  <div class="sample__subtitle">
+                    Lines by David Girelli</div>
+                </div>
+                <div class="sample__text">
+                  Серия получила название Lines, и это не случайно: ее главным декоративным мотивом стали тонкие
+                  параллельные линии. Естественную линейную структуру натурального дуба Джирелли дополнил реечной
+                  отделкой фасадов, создав эстетически последовательные предметы с выраженной харизмой.
+                </div>
+                <button class="sample__btn">
+                  <a class="sample__link" href="#">
+                    Все коллекции
+                  </a>
+                </button>
+                <button class="sample-detail__btn">
+                  <a class="sample__link" href="#">
+                    Подробнее
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sample__item">
+            <div class="sample__box">
+              <div class="sample__images">
+                <img class="sample__img" src="images/slider.jpg" alt="sample">
+              </div>
+              <div class="sample__info">
+                <div class="sample__inner">
+                  <div class="sample__title">Коллекции</div>
+                  <div class="sample__subtitle">
+                    Lines by David Girelli</div>
+                </div>
+                <div class="sample__text">
+                  Серия получила название Lines, и это не случайно: ее главным декоративным мотивом стали тонкие
+                  параллельные линии. Естественную линейную структуру натурального дуба Джирелли дополнил реечной
+                  отделкой фасадов, создав эстетически последовательные предметы с выраженной харизмой.
+                </div>
+                <button class="sample__btn">
+                  <a class="sample__link" href="#">
+                    Все коллекции
+                  </a>
+                </button>
+                <button class="sample-detail__btn">
+                  <a class="sample__link" href="#">
+                    Подробнее
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sample__item">
+            <div class="sample__box">
+              <div class="sample__images">
+                <img class="sample__img" src="images/slider.jpg" alt="sample">
+              </div>
+              <div class="sample__info">
+                <div class="sample__inner">
+                  <div class="sample__title">Коллекции</div>
+                  <div class="sample__subtitle">
+                    Lines by David Girelli</div>
+                </div>
+                <div class="sample__text">
+                  Серия получила название Lines, и это не случайно: ее главным декоративным мотивом стали тонкие
+                  параллельные линии. Естественную линейную структуру натурального дуба Джирелли дополнил реечной
+                  отделкой фасадов, создав эстетически последовательные предметы с выраженной харизмой.
+                </div>
+                <button class="sample__btn">
+                  <a class="sample__link" href="#">
+                    Все коллекции
+                  </a>
+                </button>
+                <button class="sample-detail__btn">
+                  <a class="sample__link" href="#">
+                    Подробнее
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="sample__item">
+            <div class="sample__box">
+              <div class="sample__images">
+                <img class="sample__img" src="images/slider.jpg" alt="sample">
+              </div>
+              <div class="sample__info">
+                <div class="sample__inner">
+                  <div class="sample__title">Коллекции</div>
+                  <div class="sample__subtitle">
+                    Lines by David Girelli</div>
+                </div>
+                <div class="sample__text">
+                  Серия получила название Lines, и это не случайно: ее главным декоративным мотивом стали тонкие
+                  параллельные линии. Естественную линейную структуру натурального дуба Джирелли дополнил реечной
+                  отделкой фасадов, создав эстетически последовательные предметы с выраженной харизмой.
+                </div>
+                <button class="sample__btn">
+                  <a class="sample__link" href="#">
+                    Все коллекции
+                  </a>
+                </button>
+                <button class="sample-detail__btn">
+                  <a class="sample__link" href="#">
+                    Подробнее
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="model">
+      <div class="container">
+        <div class="model__slider">
+          <div class="model__item">
+            <div class="model__box">
+              <div class="model__info">
+                <div class="model__inner">
+                  <div class="model__title">Коллекции</div>
+                  <div class="model__subtitle">
+                    Lines by David Girelli</div>
+                </div>
+                <div class="model__text">
+                  Серия получила название Lines, и это не случайно: ее главным декоративным мотивом стали тонкие
+                  параллельные линии. Естественную линейную структуру натурального дуба Джирелли дополнил реечной
+                  отделкой фасадов, создав эстетически последовательные предметы с выраженной харизмой.
+                </div>
+                <button class="model__btn">
+                  <a class="model__link" href="#">
+                    Все коллекции
+                  </a>
+                </button>
+                <button class="model-detail__btn">
+                  <a class="model__link" href="#">
+                    Подробнее
+                  </a>
+                </button>
+              </div>
+              <div class="model__images">
+                <img class="model__img" src="images/slider.jpg" alt="model">
+              </div>
+            </div>
+          </div>
+          <div class="model__item">
+            <div class="model__box">
+              <div class="model__info">
+                <div class="model__inner">
+                  <div class="model__title">Коллекции</div>
+                  <div class="model__subtitle">
+                    Lines by David Girelli</div>
+                </div>
+                <div class="model__text">
+                  Серия получила название Lines, и это не случайно: ее главным декоративным мотивом стали тонкие
+                  параллельные линии. Естественную линейную структуру натурального дуба Джирелли дополнил реечной
+                  отделкой фасадов, создав эстетически последовательные предметы с выраженной харизмой.
+                </div>
+                <button class="model__btn">
+                  <a class="model__link" href="#">
+                    Все коллекции
+                  </a>
+                </button>
+                <button class="model-detail__btn">
+                  <a class="model__link" href="#">
+                    Подробнее
+                  </a>
+                </button>
+              </div>
+              <div class="model__images">
+                <img class="model__img" src="images/slider.jpg" alt="model">
+              </div>
+            </div>
+          </div>
+          <div class="model__item">
+            <div class="model__box">
+              <div class="model__info">
+                <div class="model__inner">
+                  <div class="model__title">Коллекции</div>
+                  <div class="model__subtitle">
+                    Lines by David Girelli</div>
+                </div>
+                <div class="model__text">
+                  Серия получила название Lines, и это не случайно: ее главным декоративным мотивом стали тонкие
+                  параллельные линии. Естественную линейную структуру натурального дуба Джирелли дополнил реечной
+                  отделкой фасадов, создав эстетически последовательные предметы с выраженной харизмой.
+                </div>
+                <button class="model__btn">
+                  <a class="model__link" href="#">
+                    Все коллекции
+                  </a>
+                </button>
+                <button class="model-detail__btn">
+                  <a class="model__link" href="#">
+                    Подробнее
+                  </a>
+                </button>
+              </div>
+              <div class="model__images">
+                <img class="model__img" src="images/slider.jpg" alt="model">
+              </div>
+            </div>
+          </div>
+          <div class="model__item">
+            <div class="model__box">
+              <div class="model__info">
+                <div class="model__inner">
+                  <div class="model__title">Коллекции</div>
+                  <div class="model__subtitle">
+                    Lines by David Girelli</div>
+                </div>
+                <div class="model__text">
+                  Серия получила название Lines, и это не случайно: ее главным декоративным мотивом стали тонкие
+                  параллельные линии. Естественную линейную структуру натурального дуба Джирелли дополнил реечной
+                  отделкой фасадов, создав эстетически последовательные предметы с выраженной харизмой.
+                </div>
+                <button class="model__btn">
+                  <a class="model__link" href="#">
+                    Все коллекции
+                  </a>
+                </button>
+                <button class="model-detail__btn">
+                  <a class="model__link" href="#">
+                    Подробнее
+                  </a>
+                </button>
+              </div>
+              <div class="model__images">
+                <img class="model__img" src="images/slider.jpg" alt="model">
+              </div>
+            </div>
+          </div>
+          <div class="model__item">
+            <div class="model__box">
+              <div class="model__info">
+                <div class="model__inner">
+                  <div class="model__title">Коллекции</div>
+                  <div class="model__subtitle">
+                    Lines by David Girelli</div>
+                </div>
+                <div class="model__text">
+                  Серия получила название Lines, и это не случайно: ее главным декоративным мотивом стали тонкие
+                  параллельные линии. Естественную линейную структуру натурального дуба Джирелли дополнил реечной
+                  отделкой фасадов, создав эстетически последовательные предметы с выраженной харизмой.
+                </div>
+                <button class="model__btn">
+                  <a class="model__link" href="#">
+                    Все коллекции
+                  </a>
+                </button>
+                <button class="model-detail__btn">
+                  <a class="model__link" href="#">
+                    Подробнее
+                  </a>
+                </button>
+              </div>
+              <div class="model__images">
+                <img class="model__img" src="images/slider.jpg" alt="model">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="creative-wrapper">
+      <div class="container">
+        <div class="creative__inner">
+          <div class="creative__box">
+            <h1 class="creative__title">
+              Дизайнеры
+            </h1>
+            <a class="creative__link" href="#">
+              <button class="creative__btn">
+                <span class="creative__text">Все дизайнеры</span>
+                <span class="creative-mobile__text">Все </span>
+                <img class="creative__img" src="images/product-arrow.png" alt="model">
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="artist">
+      <div class="container">
+        <div class="artist__inner">
+          <div class="artist__box">
+            <div class="artist__img">
+              <img class="artist__images" src="images/artist__img.jpg" alt="artist" />
+            </div>
+            <div class="artist-small__img">
+              <img class="artist-small__images" src="images/artist-small__img1.jpg" alt="artist-small" />
+            </div>
+          </div>
+          <div class="artist__box">
+            <div class="artist__img">
+              <img class="artist__images" src="images/artist__img.jpg" alt="artist" />
+            </div>
+            <div class="artist-small__img">
+              <img class="artist-small__images" src="images/artist-small__img1.jpg" alt="artist-small" />
+            </div>
+          </div>
+          <div class="artist__box">
+            <div class="artist__img">
+              <img class="artist__images" src="images/artist__img.jpg" alt="artist" />
+            </div>
+            <div class="artist-small__img">
+              <img class="artist-small__images" src="images/artist-small__img1.jpg" alt="artist-small" />
+            </div>
+          </div>
+          <div class="artist__box">
+            <div class="artist__img">
+              <img class="artist__images" src="images/artist__img.jpg" alt="artist" />
+            </div>
+            <div class="artist-small__img">
+              <img class="artist-small__images" src="images/artist-small__img1.jpg" alt="artist-small" />
+            </div>
+          </div>
+          <div class="artist__box">
+            <div class="artist__img">
+              <img class="artist__images" src="images/artist__img.jpg" alt="artist" />
+            </div>
+            <div class="artist-small__img">
+              <img class="artist-small__images" src="images/artist-small__img1.jpg" alt="artist-small" />
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-artist swiper">
+          <div class="blog-artist swiper-wrapper">
+            <div class="swiper-slide blog-artist">
+              <div class="artist__img">
+                <img class="artist__images" src="images/artist__img.jpg" alt="artist" />
+              </div>
+              <div class="artist-small__img">
+                <img class="artist-small__images" src="images/artist-small__img1.jpg" alt="artist-small" />
+              </div>
+            </div>
+            <div class="swiper-slide blog-artist">
+              <div class="artist__img">
+                <img class="artist__images" src="images/artist__img.jpg" alt="artist" />
+              </div>
+              <div class="artist-small__img">
+                <img class="artist-small__images" src="images/artist-small__img1.jpg" alt="artist-small" />
+              </div>
+            </div>
+            <div class="swiper-slide blog-artist">
+              <div class="artist__img">
+                <img class="artist__images" src="images/artist__img.jpg" alt="artist" />
+              </div>
+              <div class="artist-small__img">
+                <img class="artist-small__images" src="images/artist-small__img1.jpg" alt="artist-small" />
+              </div>
+            </div>
+            <div class="swiper-slide blog-artist">
+              <div class="artist__img">
+                <img class="artist__images" src="images/artist__img.jpg" alt="artist" />
+              </div>
+              <div class="artist-small__img">
+                <img class="artist-small__images" src="images/artist-small__img1.jpg" alt="artist-small" />
+              </div>
+            </div>
+            <div class="swiper-slide blog-artist">
+              <div class="artist__img">
+                <img class="artist__images" src="images/artist__img.jpg" alt="artist" />
+              </div>
+              <div class="artist-small__img">
+                <img class="artist-small__images" src="images/artist-small__img1.jpg" alt="artist-small" />
+              </div>
+            </div>
+            <div class="swiper-slide blog-artist">
+              <div class="artist__img">
+                <img class="artist__images" src="images/artist__img.jpg" alt="artist" />
+              </div>
+              <div class="artist-small__img">
+                <img class="artist-small__images" src="images/artist-small__img1.jpg" alt="artist-small" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination blog-artist"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="innovation">
+      <div class="container">
+        <div class="innovation__wrapper">
+          <a class="innovation__link" href="#">
+            <img class="innovation__img" src="images/innovation1.jpg" alt="innovation">
+            <div class="innovation__item">
+              <div class="innovation__title">
+                Metropolitan Esperia
+              </div>
+              <div class="innovation__text">
+                Инновационная отделка Cleaf, разработанная итальянским<br>
+                технологом Лучано Каспани
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog__menu">
+      <div class="container">
+        <div class="blog__inner">
+          <div class="blog__box">
+            <h1 class="blog__title">
+              Блог
+            </h1>
+            <a class="blog__link" href="#">
+              <span class="blog__subtitle">
+                Все статьи
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="blog-chapter__nav">
+          <a class="blog-chapter-first__link" href="#">
+            Все
+          </a>
+          <a class="blog-chapter__link" href="#">
+            Новости
+          </a>
+          <a class="blog-chapter__link" href="#">
+            Проекты
+          </a>
+          <a class="blog-chapter__link" href="#">
+            Идеи
+          </a>
+        </div>
+        <div class="blog-new">
+          <div class="blog-new__box">
+            <a class="blog-new__link" href="#">
+              <img class="blog-new__img" src="images/room-1.png" alt="blog">
+            </a>
+            <div class="blog-new__inner"><a class="blog-new__link" href="#">новости</a><br></div>
+            <div class="blog-new__item"><a class="blog-bed__link" href="#">Кровати Дабл и Стинсон<br> в историческом
+                пространстве</a><br></div>
+            <div class="blog-new__data">15 декабря</div><br>
+          </div>
+          <div class="blog-new__box">
+            <a class="blog-new__link" href="#">
+              <img class="blog-new__img" src="images/room-1.png" alt="blog">
+            </a>
+            <div class="blog-new__inner"><a class="blog-new__link" href="#">новости</a><br></div>
+            <div class="blog-new__item"><a class="blog-bed__link" href="#">Кровати Дабл и Стинсон<br> в историческом
+                пространстве</a><br></div>
+            <div class="blog-new__data">15 декабря</div><br>
+          </div>
+          <div class="blog-new__box">
+            <a class="blog-new__link" href="#">
+              <img class="blog-new__img" src="images/room-1.png" alt="blog">
+            </a>
+            <div class="blog-new__inner"><a class="blog-new__link" href="#">новости</a><br></div>
+            <div class="blog-new__item"><a class="blog-bed__link" href="#">Кровати Дабл и Стинсон<br> в историческом
+                пространстве</a><br></div>
+            <div class="blog-new__data">15 декабря</div><br>
+          </div>
+          <div class="blog-new__box">
+            <a class="blog-new__link" href="#">
+              <img class="blog-new__img" src="images/room-1.png" alt="blog">
+            </a>
+            <div class="blog-new__inner"><a class="blog-new__link" href="#">новости</a><br></div>
+            <div class="blog-new__item"><a class="blog-bed__link" href="#">Кровати Дабл и Стинсон<br> в историческом
+                пространстве</a><br></div>
+            <div class="blog-new__data">15 декабря</div><br>
+          </div>
+          <div class="blog-new__box">
+            <a class="blog-new__link" href="#">
+              <img class="blog-new__img" src="images/room-1.png" alt="blog">
+            </a>
+            <div class="blog-new__inner"><a class="blog-new__link" href="#">новости</a><br></div>
+            <div class="blog-new__item"><a class="blog-bed__link" href="#">Кровати Дабл и Стинсон<br> в историческом
+                пространстве</a><br></div>
+            <div class="blog-new__data">15 декабря</div><br>
+          </div>
+          <div class="blog-new__box">
+            <a class="blog-new__link" href="#">
+              <img class="blog-new__img" src="images/room-1.png" alt="blog">
+            </a>
+            <div class="blog-new__inner"><a class="blog-new__link" href="#">новости</a><br></div>
+            <div class="blog-new__item"><a class="blog-bed__link" href="#">Кровати Дабл и Стинсон<br> в историческом
+                пространстве</a><br></div>
+            <div class="blog-new__data">15 декабря</div><br>
+          </div>
+          <div class="blog-new__box">
+            <a class="blog-new__link" href="#">
+              <img class="blog-new__img" src="images/room-1.png" alt="blog">
+            </a>
+            <div class="blog-new__inner"><a class="blog-new__link" href="#">новости</a><br></div>
+            <div class="blog-new__item"><a class="blog-bed__link" href="#">Кровати Дабл и Стинсон<br> в историческом
+                пространстве</a><br></div>
+            <div class="blog-new__data">15 декабря</div><br>
+          </div>
+          <div class="blog-new__box">
+            <a class="blog-new__link" href="#">
+              <img class="blog-new__img" src="images/room-1.png" alt="blog">
+            </a>
+            <div class="blog-new__inner"><a class="blog-new__link" href="#">новости</a><br></div>
+            <div class="blog-new__item"><a class="blog-bed__link" href="#">Кровати Дабл и Стинсон<br> в историческом
+                пространстве</a><br></div>
+            <div class="blog-new__data">15 декабря</div><br>
+          </div>
+          <div class="blog-new__box">
+            <a class="blog-new__link" href="#">
+              <img class="blog-new__img" src="images/room-1.png" alt="blog">
+            </a>
+            <div class="blog-new__inner"><a class="blog-new__link" href="#">новости</a><br></div>
+            <div class="blog-new__item"><a class="blog-bed__link" href="#">Кровати Дабл и Стинсон<br> в историческом
+                пространстве</a><br></div>
+            <div class="blog-new__data">15 декабря</div><br>
+          </div>
+          <div class="blog-new__box">
+            <a class="blog-new__link" href="#">
+              <img class="blog-new__img" src="images/room-1.png" alt="blog">
+            </a>
+            <div class="blog-new__inner"><a class="blog-new__link" href="#">новости</a><br></div>
+            <div class="blog-new__item"><a class="blog-bed__link" href="#">Кровати Дабл и Стинсон<br> в историческом
+                пространстве</a><br></div>
+            <div class="blog-new__data">15 декабря</div><br>
+          </div>
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a class="blog-new__link" href="#">
+                <img class="blog-new__img" src="images/room-1.png" alt="blog">
+              </a>
+              <div class="blog-new__inner"><a class="blog-new__link" href="#">новости</a><br></div>
+              <div class="blog-new__item"><a class="blog-bed__link" href="#">Кровати Дабл и Стинсон<br> в историческом
+                  пространстве</a><br></div>
+              <div class="blog-new__data">15 декабря</div>
+            </div>
+            <div class="swiper-slide">
+              <a class="blog-new__link" href="#">
+                <img class="blog-new__img" src="images/room-1.png" alt="blog">
+              </a>
+              <div class="blog-new__inner"><a class="blog-new__link" href="#">новости</a><br></div>
+              <div class="blog-new__item"><a class="blog-bed__link" href="#">Кровати Дабл и Стинсон<br> в историческом
+                  пространстве</a><br></div>
+              <div class="blog-new__data">15 декабря</div>
+            </div>
+            <div class="swiper-slide">
+              <a class="blog-new__link" href="#">
+                <img class="blog-new__img" src="images/room-1.png" alt="blog">
+              </a>
+              <div class="blog-new__inner"><a class="blog-new__link" href="#">новости</a><br></div>
+              <div class="blog-new__item"><a class="blog-bed__link" href="#">Кровати Дабл и Стинсон<br> в историческом
+                  пространстве</a><br></div>
+              <div class="blog-new__data">15 декабря</div>
+            </div>
+            <div class="swiper-slide">
+              <a class="blog-new__link" href="#">
+                <img class="blog-new__img" src="images/room-1.png" alt="blog">
+              </a>
+              <div class="blog-new__inner"><a class="blog-new__link" href="#">новости</a><br></div>
+              <div class="blog-new__item"><a class="blog-bed__link" href="#">Кровати Дабл и Стинсон<br> в историческом
+                  пространстве</a><br></div>
+              <div class="blog-new__data">15 декабря</div>
+            </div>
+            <div class="swiper-slide">
+              <a class="blog-new__link" href="#">
+                <img class="blog-new__img" src="images/room-1.png" alt="blog">
+              </a>
+              <div class="blog-new__inner"><a class="blog-new__link" href="#">новости</a><br></div>
+              <div class="blog-new__item"><a class="blog-bed__link" href="#">Кровати Дабл и Стинсон<br> в историческом
+                  пространстве</a><br></div>
+              <div class="blog-new__data">15 декабря</div>
+            </div>
+            <div class="swiper-slide">
+              <a class="blog-new__link" href="#">
+                <img class="blog-new__img" src="images/room-1.png" alt="blog">
+              </a>
+              <div class="blog-new__inner"><a class="blog-new__link" href="#">новости</a><br></div>
+              <div class="blog-new__item"><a class="blog-bed__link" href="#">Кровати Дабл и Стинсон<br> в историческом
+                  пространстве</a><br></div>
+              <div class="blog-new__data">15 декабря</div>
+            </div>
+            <div class="swiper-slide">
+              <a class="blog-new__link" href="#">
+                <img class="blog-new__img" src="images/room-1.png" alt="blog">
+              </a>
+              <div class="blog-new__inner"><a class="blog-new__link" href="#">новости</a><br></div>
+              <div class="blog-new__item"><a class="blog-bed__link" href="#">Кровати Дабл и Стинсон<br> в историческом
+                  пространстве</a><br></div>
+              <div class="blog-new__data">15 декабря</div>
+            </div>
+            <div class="swiper-slide">
+              <a class="blog-new__link" href="#">
+                <img class="blog-new__img" src="images/room-1.png" alt="blog">
+              </a>
+              <div class="blog-new__inner"><a class="blog-new__link" href="#">новости</a><br></div>
+              <div class="blog-new__item"><a class="blog-bed__link" href="#">Кровати Дабл и Стинсон<br> в историческом
+                  пространстве</a><br></div>
+              <div class="blog-new__data">15 декабря</div>
+            </div>
+            <div class="swiper-slide">
+              <a class="blog-new__link" href="#">
+                <img class="blog-new__img" src="images/room-1.png" alt="blog">
+              </a>
+              <div class="blog-new__inner"><a class="blog-new__link" href="#">новости</a><br></div>
+              <div class="blog-new__item"><a class="blog-bed__link" href="#">Кровати Дабл и Стинсон<br> в историческом
+                  пространстве</a><br></div>
+              <div class="blog-new__data">15 декабря</div>
+            </div>
+            <div class="swiper-slide">
+              <a class="blog-new__link" href="#">
+                <img class="blog-new__img" src="images/room-1.png" alt="blog">
+              </a>
+              <div class="blog-new__inner"><a class="blog-new__link" href="#">новости</a><br></div>
+              <div class="blog-new__item"><a class="blog-bed__link" href="#">Кровати Дабл и Стинсон<br> в историческом
+                  пространстве</a><br></div>
+              <div class="blog-new__data">15 декабря</div>
+            </div>
+            <div class="swiper-slide">
+              <a class="blog-new__link" href="#">
+                <img class="blog-new__img" src="images/room-1.png" alt="blog">
+              </a>
+              <div class="blog-new__inner"><a class="blog-new__link" href="#">новости</a><br></div>
+              <div class="blog-new__item"><a class="blog-bed__link" href="#">Кровати Дабл и Стинсон<br> в историческом
+                  пространстве</a><br></div>
+              <div class="blog-new__data">15 декабря</div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="subscription">
+          <div class="subscription__box">
+            <span class="subscription__title">
+              Больше идей для интерьера мечты – в нашей рассылке</span>
+            <div class="subscription__text">
+              Подписываясь, я принимаю
+              <a class="subscription__link" href="#">
+                пользовательское соглашение
+              </a>
+            </div>
+          </div>
+          <form class="mail" action="">
+            <input class="mail-text" type="email" placeholder="Ваш e-mail" required="required" class="input">
+            <input class="mail-submit" type="submit" value="Подписаться">
+          </form>
+        </div>
+
+        <div class="subscription-adaptive">
+          <div class="subscription-adaptive__box">
+            <span class="subscription-adaptive__title">
+              Больше идей для интерьера мечты – в нашей рассылке</span>
+          </div>
+          <form class="mail-adaptive" action="">
+            <input class="mail-adaptive__text" type="email" placeholder="Ваш e-mail" required="required" class="input">
+            <input class="mail-adaptive__submit" type="submit" value="Подписаться">
+          </form>
+          <div class="subscription-adaptive__text">
+            Подписываясь, я принимаю
+            <a class="subscription-adaptive__link" href="#">
+              пользовательское соглашение
+            </a>
+          </div>
+        </div>
+
+        <div class="comfort">
+          <div class="comfort__box">
+            <img class="comfort__images" src="images/comfort.jpg" alt="comfort">
+          </div>
+          <div class="comfort__inner">
+            <h4 class="comfort__title">О нас</h4>
+            <p class="comfort__text">
+              Мы верим, что дом должен отражать внутренний мир владельцев и служить комфортным пространством для жизни.
+              В ассортименте Dantone Home – мягкие диваны для семейных просмотров, витрины для памятных мелочей и просто
+              красивые вещи, которые делают дом домом
+            </p>
+            <button class="comfort__btn">
+              <a class="comfort__link" href="#">
+                Подробнее
+            </button>
+            <ul class="comfort__list">
+              <li>
+                <a class="comfort-subtitle-one__link" href="#">О нас</a>
+              </li>
+              <li>
+                <a class="comfort-subtitle__link" href="#">Производство</a>
+              </li>
+              <li>
+                <a class="comfort-subtitle__link" href="#">История</a>
+              </li>
+              <li>
+                <a class="comfort-subtitle__link" href="#">Карьера</a>
+              </li>
+              <li>
+                <a class="comfort-subtitle__link" href="#">Команда</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="picture__wrapper">
+      <div class="container">
+        <div class="picture__box">
+          <div class="picture__item">
+            <a class="picture__link" href="">
+              <img class="picture__img" src="images/tiny-picture-1.png" alt="picture">
+              <span class="picture__text">
+                <span class="picture__title">Kitchen</span>
+                <span class="picture__subtitle">Новая кухня за 75 рабочих дней</span>
+              </span>
+            </a>
+          </div>
+          <div class="picture__item">
+            <a class="picture__link" href="">
+              <img class="picture__img" src="images/tiny-picture-1.png" alt="picture">
+              <span class="picture__text">
+                <span class="picture__title">Kitchen</span>
+                <span class="picture__subtitle">Новая кухня за 75 рабочих дней</span>
+              </span>
+            </a>
+          </div>
+          <div class="picture__item">
+            <a class="picture__link" href="">
+              <img class="picture__img" src="images/tiny-picture-1.png" alt="picture">
+              <span class="picture__text">
+                <span class="picture__title">Kitchen</span>
+                <span class="picture__subtitle">Новая кухня за 75 рабочих дней</span>
+              </span>
+            </a>
+          </div>
+          <div class="picture__item">
+            <a class="picture__link" href="">
+              <img class="picture__img" src="images/tiny-picture-1.png" alt="picture">
+              <span class="picture__text">
+                <span class="picture__title">Kitchen</span>
+                <span class="picture__subtitle">Новая кухня за 75 рабочих дней</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer__inner">
+          <div class="footer__wrapper">
+            <div class="footer__box">
+              <span>
+                Больше идей для интерьера мечты – в нашей рассылке</span>
+              <div class="footer__text">
+                Подписываясь, я принимаю
+                <a class="footer__link" href="#">
+                  пользовательское соглашение
+                </a>
+              </div>
+            </div>
+            <form action="">
+              <input class="footer-email__input" type="email" placeholder="Ваш e-mail" required="required"
+                class="input">
+              <input class="footer-submit__input" type="submit" value="Подписаться">
+            </form>
+          </div>
+          <div class="footer-contact">
+            <a class="footer-contact__phone" href="78005512657">
+              +7 (800) 551 26 57
+            </a>
+            <a class="footer-contact__mail" href="mailto:info@dantonehome.ru">
+              info@dantonehome.ru
+            </a>
+            <a class="footer-info__mail" href="mailto:info@dantonehome.ru">
+              Написать директору
+            </a>
+          </div>
+          <div class="footer-info__box">
+            <div class="footer-info">
+              <div class="footer-info-first__item">
+                <a class="footer-info__link" href="#">
+                  <img class="footer-info__img" src="images/footer.jpg" alt="footer-info__img">
+                  <h1 class="footer-catalog-info__title">Каталог 2022</h1>
+                </a>
+              </div>
+
+              <div class="faq">
+                <div class="question">
+                  <h1 class="footer-info__title">Каталог</h1>
+                  <img class="footer__img" src="images/angel.svg" alt="menu">
+                </div>
+                <div class="answer">
+                  <ul class="footer-info__list">
+                    <li class="footer__item">New</li>
+                    <li class="footer__item">In Stock</li>
+                    <li class="footer__item">Категории</li>
+                    <li class="footer__item">Комнаты</li>
+                    <li class="footer__item">Стили</li>
+                    <li class="footer__item">Коллекции</li>
+                    <li class="footer__item">Дизайнеры</li>
+                    <li class="footer__item">Акции</li>
+                    <li class="footer__item">Sale</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="faq">
+                <div class="question">
+                  <h1 class="footer-info__title">Покупателям</h1>
+                  <img class="footer__img" src="images/angel.svg" alt="menu">
+                </div>
+                <div class="answer">
+                  <ul class="footer-info__list">
+                    <li class="footer__item">Оплата</li>
+                    <li class="footer__item">Доставка</li>
+                    <li class="footer__item">Возврат и обмен</li>
+                    <li class="footer__item">Гарантия и сервис</li>
+                    <li class="footer__item">Рассрочка и кредит</li>
+                    <li class="footer__item">Инструкции по эксплуатации</li>
+                    <li class="footer__item">Дизайн-консультации</li>
+                    <li class="footer__item">Дизайн-бюро</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="faq">
+                <div class="question">
+                  <h1 class="footer-info__title">Блог</h1>
+                  <img class="footer__img" src="images/angel.svg" alt="menu">
+                </div>
+                <div class="answer">
+                  <ul class="footer-info__list">
+                    <li class="footer__item">Новости</li>
+                    <li class="footer__item">Проекты</li>
+                    <li class="footer__item">Идеи</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="faq">
+                <div class="question">
+                  <h1 class="footer-info__title">О нас</h1>
+                  <img class="footer__img" src="images/angel.svg" alt="menu">
+                </div>
+                <div class="answer">
+                  <ul class="footer-info__list">
+                    <li class="footer__item">О компании</li>
+                    <li class="footer__item">Новости о компании</li>
+                    <li class="footer__item">Карьера</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="faq">
+                <div class="question">
+                  <h1 class="footer-info__title">Отзывы</h1>
+                  <img class="footer__img" src="images/angel.svg" alt="menu">
+                </div>
+                <div class="answer">
+                  <ul class="footer-info__list">
+                    <li class="footer__item">Яндекс</li>
+                    <li class="footer__item">Google</li>
+                    <li class="footer__item">Houzz</li>
+                  </ul>
+                  <div class="footer-part__box">
+                    <div class="footer-part__title">
+                      Шоурумы
+                    </div>
+                    <div class="footer-part__title">
+                      Контакты
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-info-question-last__item">
+                <a class="footer-info__link" href="#">
+                  <div class="question">
+                    <h1 class="footer-info__title">Шоурумы</h1>
+                  </div>
+                </a>
+              </div>
+              <div class="footer-info-question-last__item">
+                <a class="footer-info__link" href="#">
+                  <div class="question">
+                    <h1 class="footer-info__title">Контакты</h1>
+                  </div>
+                </a>
+              </div>
+              <div class="footer-last-info__item">
+                <a class="footer-last-info__link" href="#">
+                  <img class="footer-info__img" src="images/footer.jpg" alt="footer-info__img">
+                  <h1 class="footer-catalog-info__title">Каталог 2022</h1>
+                </a>
+              </div>
+              <div class="footer-big__description">
+                <div class="footer__description">
+                  <div class="footer-catalog__description">
+                    <div class="footer-catalog__box">
+                      <img class="footer-info__img" src="images/footer.jpg" alt="footer-info__img">
+                      <h1 class="footer-catalog-description__title">Каталог 2022</h1>
+                    </div>
+                  </div>
+                  <div class="footer-title__description">
+                    <a class="footer-description__item" href="#">Kitchen</a>
+                    <a class="footer-description__item" href="#">Designers</a>
+                    <a class="footer-description__item" href="#">Contract</a>
+                    <a class="footer-description__item" href="#">Buro</a>
+                  </div>
+                </div>
+                <div class="footer-pin">
+                  <div class="footer-pin__img">
+                    <a class="footer-contact__element" href="#">
+                    </a>
+                    <a class="footer-youtube__element" href="#">
+                    </a>
+                    <a class="footer-telegram__element" href="#">
+                    </a>
+                    <a class="footer-pinterest__element" href="#">
+                    </a>
+                    <a class="footer-social__element" href="#">
+                    </a>
+                    <a class="footer-home__element" href="#">
+                      <svg width="18" height="18" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M0 28C0 12.536 12.536 0 28 0C43.464 0 56 12.536 56 28C56 43.464 43.464 56 28 56C12.536 56 0 43.464 0 28Z">
+                        </path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M27.4334 0C27.3011 11.5194 26.5478 17.9662 22.257 22.257C17.9662 26.5478 11.5194 27.3011 0 27.4334V29.1051C11.5194 29.2373 17.9662 29.9906 22.257 34.2814C26.4805 38.5049 27.2766 44.8173 27.4267 56H29.1118C29.2618 44.8173 30.0579 38.5049 34.2814 34.2814C38.5049 30.0579 44.8173 29.2618 56 29.1118V27.4266C44.8173 27.2766 38.5049 26.4805 34.2814 22.257C29.9906 17.9662 29.2373 11.5194 29.1051 0H27.4334Z"
+                          fill="white"></path>
+                      </svg>
+                      <path
+                        d="M0 28C0 12.536 12.536 0 28 0C43.464 0 56 12.536 56 28C56 43.464 43.464 56 28 56C12.536 56 0 43.464 0 28Z">
+                      </path>
+                    </a>
+                  </div>
+                  <div class="footer-pin__box">
+                    <h class="footer-pin__title">© 2015-2022 Dantone</h>
+                    <h class="footer-pin__title">Политика конфиденциальности</h>
+                    <h class="footer-pin__title">Карта сайта </h>
+                  </div>
+                </div>
+                <div class="footer-bankcards">
+                  <div class="footer-bankcards__box">
+                    <img src="images/visa.svg" alt="footer-picture">
+                    <img src="images/circle.svg" alt="footer-picture">
+                    <img src="images/world.svg" alt="footer-picture">
+                    <img src="images/bank.svg" alt="footer-picture">
+                    <img src="images/buy.svg" alt="footer-picture">
+                  </div>
+                  <h3 class="footer-bankcards__title">Made by Ony</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-social">
+            <div class="footer-social__box">
+              <a class="footer-contact__element" href="#">
+              </a>
+              <a class="footer-youtube__element" href="#">
+              </a>
+              <a class="footer-telegram__element" href="#">
+              </a>
+              <a class="footer-pinterest__element" href="#">
+              </a>
+              <a class="footer-social__element" href="#">
+              </a>
+              <a class="footer-home__element" href="#">
+                <svg width="18" height="18" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 28C0 12.536 12.536 0 28 0C43.464 0 56 12.536 56 28C56 43.464 43.464 56 28 56C12.536 56 0 43.464 0 28Z">
+                  </path>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M27.4334 0C27.3011 11.5194 26.5478 17.9662 22.257 22.257C17.9662 26.5478 11.5194 27.3011 0 27.4334V29.1051C11.5194 29.2373 17.9662 29.9906 22.257 34.2814C26.4805 38.5049 27.2766 44.8173 27.4267 56H29.1118C29.2618 44.8173 30.0579 38.5049 34.2814 34.2814C38.5049 30.0579 44.8173 29.2618 56 29.1118V27.4266C44.8173 27.2766 38.5049 26.4805 34.2814 22.257C29.9906 17.9662 29.2373 11.5194 29.1051 0H27.4334Z"
+                    fill="white"></path>
+                </svg>
+                <path
+                  d="M0 28C0 12.536 12.536 0 28 0C43.464 0 56 12.536 56 28C56 43.464 43.464 56 28 56C12.536 56 0 43.464 0 28Z">
+                </path>
+              </a>
+            </div>
+            <div class="footer__middle">
+              <a class="footer-middle__item" href="#">Kitchen</a>
+              <a class="footer-middle__item" href="#">Designers</a>
+              <a class="footer-middle__item" href="#">Contract</a>
+              <a class="footer-middle__item" href="#">Buro</a>
+            </div>
+            <div class="footer-picture__box">
+              <img src="images/visa.svg" alt="footer-picture">
+              <img src="images/circle.svg" alt="footer-picture">
+              <img src="images/world.svg" alt="footer-picture">
+              <img src="images/bank.svg" alt="footer-picture">
+              <img src="images/buy.svg" alt="footer-picture">
+            </div>
+          </div>
+          <div class="footer-map__box">
+            <div>
+              <span class="footer-dantone">© 2015-2022 Dantone</span>
+            </div>
+            <div class="footer-privacy">
+              <span class="footer-privacy__item">Политика конфиденциальности</span>
+              <span>Карта сайта </span>
+            </div>
+            <div class="footer-made">Made by Ony</div>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <script src="js/main.js"></script>
 </body>
-</html>
+</httitle
